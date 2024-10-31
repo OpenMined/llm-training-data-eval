@@ -13,9 +13,9 @@ Meaningful research on AI systems sometimes require access to proprietary AI mod
    - *Onsite Access*: storing the assets in a secured facility, and have researchers travel to conduct their study in-person, which is limited to the time spent on-site and expensive
    - *API Access*: restricted to pre-defined APIs and difficult to expand due to the risk of data/assets being extracted
 
-Third-party access for researchers to study proprietary LLMs are typically denied due to **competitive, trust & safety, security, privacy, and legal concerns**, resulting in limited means to address, or even identify, AI safety issues. As a result, answering questions like the one below is difficult.
+Third-party access for researchers to study proprietary LLMs are typically denied due to **competitive, trust & safety, security, privacy, and legal concerns**, resulting in limited means to address, or even identify, AI safety issues. As a result, answering questions about the training data, user logs or the model itself are very difficult.
 
-**Does the model's knowledge include the creation of pathogens and deadly chemicals?**
+## A solution to the external access problem
 
 PySyft proposes a paradigm where a third-party researchers can answer approved questions, whilst the private assets never leave the premises of the AI Lab. To ensure security, we will be using an air-gapped deployment composed of two servers:
 - Low-side: can be accessed by the researchers. However, it does not store any private assets, but fake counterparts that "mimic" the private assets.
@@ -23,7 +23,7 @@ PySyft proposes a paradigm where a third-party researchers can answer approved q
 
 A representative of the AI Lab is responsible for reviewing, approving and forwarding computational results back from high side to low side.
 
-![image-2.png](attachment:image-2.png)
+![image](https://github.com/user-attachments/assets/78f7106f-0e8b-4a6e-9ba4-0f6710dd3dda)
 
 ## Pre-requisites
 
